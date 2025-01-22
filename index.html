@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Precious Care - Soins Médicaux pour les Populations Vulnérables</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <!-- <header class="header"> -->
+  <nav class="nav-container">
+    <div class="logo">
+      <h1>Precious Care</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="#about">À Propos</a></li>
+      <li><a href="#services">Objectifs</a></li>
+      <li><a href="#impact">Notre Impact</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#donate" class="donate-btn">Faire un Don</a></li>
+    </ul>
+    <button class="mobile-menu" id="mobileMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+<!-- </header> -->
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h2>Apporter des Soins Médicaux aux Plus Démunis</h2>
+          <p>Fournir des services de santé essentiels aux populations vulnérables dans le monde entier</p>
+          <div class="hero-buttons">
+            <a href="don.html" class="btn primary">Faire un Don</a>
+            <a href="#volunteer" class="btn secondary">Devenir Bénévole</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <h2>À Propos de Precious Care</h2>
+          <div class="about-grid">
+            <div class="about-content">
+              <p>Nous nous consacrons à fournir des soins médicaux et un soutien aux populations vulnérables à travers le monde. Notre équipe de professionnels de santé et de bénévoles travaille sans relâche pour garantir l'accès à des soins médicaux de qualité, quelles que soient les circonstances.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services">
+        <div class="container">
+          <h2>Nos objectifs</h2>
+          <div class="services-grid">
+            <div class="service-card">
+              <img src="assets/images/soins_medical.png" alt="Soins Médicaux">
+              <h3>Soins Médicaux</h3>
+              <p>Services de santé primaires pour les personnes dans le besoin</p>
+            </div>
+            <div class="service-card">
+              <img src="https://placehold.co/600x400" alt="Intervention d'Urgence">
+              <h3>Intervention d'Urgence</h3>
+              <p>Assistance médicale rapide en situation de crise</p>
+            </div>
+            <div class="service-card">
+              <img src="https://placehold.co/600x400" alt="Éducation à la Santé">
+              <h3>Éducation à la Santé</h3>
+              <p>Éducation et prévention en matière de santé communautaire</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="impact-stories" id="impact">
+        <div class="container">
+          <h2>Notre impact</h2>
+          <div id="impactSlider"></div>
+        </div>
+      </section>
+      
+<section id="featured-projects" class="featured-projects">
+  <div class="container">
+    <h2>Projets en vedette</h2>
+    <div class="filter-container">
+      <button class="filter-btn active" data-category="all">Tous</button>
+      <button class="filter-btn" data-category="santé">Santé</button>
+      <button class="filter-btn" data-category="éducation">Éducation</button>
+      <button class="filter-btn" data-category="sensibilisation">Sensibilisation</button>
+    </div>
+    <div class="projects-grid">
+      <!-- Projets dynamiques -->
+      <div class="project-card" data-category="santé">
+        <h3>Cliniques Mobiles</h3>
+        <p>Apporter des soins dans les zones reculées.</p>
+      </div>
+      <div class="project-card" data-category="éducation">
+        <h3>Éducation Communautaire</h3>
+        <p>Programmes éducatifs pour autonomiser les populations locales.</p>
+      </div>
+      <div class="project-card" data-category="sensibilisation">
+        <h3>Campagnes de Sensibilisation</h3>
+        <p>Sensibilisation sur l'importance de la santé préventive.</p>
+      </div>
+    </div>
+    <div id="map" class="map"></div>
+  </div>
+</section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2>Contactez-nous</h2>
+          <div class="contact-grid">
+            <div class="contact-form">
+              <form id="contactForm">
+                <div class="form-group">
+                  <label for="name">Nom</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn primary">Envoyer le Message</button>
+              </form>
+            </div>
+            <!-- <div class="contact-info">
+              <h3>Prenez Contact</h3>
+              <p>Nous serions ravis d'avoir de vos nouvelles. Contactez-nous pour toute question sur notre travail ou sur la façon dont vous pouvez aider.</p>
+              <div class="contact-details">
+                <p><strong>Email:</strong> info@preciouscare.org</p>
+                <p><strong>Téléphone:</strong> +33 (0)1 23 45 67 89</p>
+                <p><strong>Adresse:</strong> 123 Rue du Soin, 75001 Paris, France</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <!-- <footer class="footer"> -->
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3>Precious Care</h3>
+        <p>Rendre les soins de santé accessibles à tous</p>
+      </div>
+      <div class="footer-section">
+        <h4>Liens Rapides</h4>
+        <ul>
+          <li><a href="#about">À Propos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#impact">Impact</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Suivez-nous</h4>
+        <div class="social-links">
+          <a href="#" class="social-link">Facebook</a>
+          <a href="#" class="social-link">Twitter</a>
+          <a href="#" class="social-link">Instagram</a>
+          <a href="#" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Precious Care. Tous droits réservés.</p>
+    </div>
+  </div>
+<!-- </footer> -->
+    </footer>
+
+    <a href="https://wa.me/22241966974" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+      <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+
+    <script type="module" src="/scripts/main.js"></script>
+    <!-- <script src="/components/includeComponents.js"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  </body>
+</html>

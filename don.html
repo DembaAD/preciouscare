@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faire un Don - Precious Care</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+ <!-- <header class="header"> -->
+  <nav class="nav-container">
+    <div class="logo">
+      <h1>Precious Care</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="#about">À Propos</a></li>
+      <li><a href="#services">Objectifs</a></li>
+      <li><a href="#impact">Notre Impact</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#donate" class="donate-btn">Faire un Don</a></li>
+    </ul>
+    <button class="mobile-menu" id="mobileMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+<!-- </header> -->
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h2>Faites un don</h2>
+          <p>
+            Aidez-nous à améliorer les vies en contribuant par des dons en nature ou en espèces.
+            Nous acceptons les matériels médicaux et tout autre type de soutien.
+          </p>
+          <div class="hero-buttons">
+            <a href="#don-form" class="btn primary">Donner maintenant</a>
+            <a href="about.html" class="btn secondary">En savoir plus</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Donation Form Section -->
+      <section id="don-form" class="about">
+        <div class="container">
+          <h1>Soyez acteur du changement</h1>
+          <p>
+            Remplissez le formulaire ci-dessous pour faire un don. Chaque geste compte
+            pour transformer des vies et soutenir notre mission.
+          </p>
+          <form action="submit_donation.php" method="POST" class="form-group">
+            <div class="form-group">
+              <label for="name">Nom complet :</label>
+              <input type="text" id="name" name="name" placeholder="Votre nom" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email :</label>
+              <input type="email" id="email" name="email" placeholder="Votre email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="type">Type de don :</label>
+              <select id="type" name="type" required>
+                <option value="">-- Sélectionnez --</option>
+                <option value="nature">Don en nature</option>
+                <option value="especes">Don en espèces</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message ou détails :</label>
+              <textarea id="message" name="message" placeholder="Détails sur votre don"></textarea>
+            </div>
+
+            <button type="submit" class="btn primary">Envoyer</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <!-- <footer class="footer"> -->
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3>Precious Care</h3>
+        <p>Rendre les soins de santé accessibles à tous</p>
+      </div>
+      <div class="footer-section">
+        <h4>Liens Rapides</h4>
+        <ul>
+          <li><a href="#about">À Propos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#impact">Impact</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Suivez-nous</h4>
+        <div class="social-links">
+          <a href="#" class="social-link">Facebook</a>
+          <a href="#" class="social-link">Twitter</a>
+          <a href="#" class="social-link">Instagram</a>
+          <a href="#" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Precious Care. Tous droits réservés.</p>
+    </div>
+  </div>
+<!-- </footer> -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/components/includeComponents.js"></script>
+    <script type="module" src="/scripts/main.js"></script>
+  </body>
+</html>
